@@ -10,8 +10,8 @@ def swap_chars(string, idx1, idx2):
 def sort(data):
 	for x in range(len(data)):
 		for y in range(len(data)):
-			if data[x]>data[y]:
-				swap_chars(data, x, y)
+			if data[x]<data[y]:
+				data=swap_chars(data, x, y)
 	return data
 			
 		
